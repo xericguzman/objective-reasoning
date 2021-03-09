@@ -1,8 +1,14 @@
 # `objective-reasoning`
 
+> Working with objects! We'll write some functions that show us the power and flexibility of objects. As usual start of by:
+* Fork this repo
+* Clone it to your computer
+* run `npm install`
+* run `jest` or `jest --watch-all` to run the tests
+
 ## `isAdmin`
 
-Write a function that takes in a user object and returns true if the user is an admin,
+Write a function, `isAdmin` that takes in a user object and returns true if the user is an admin,
 as indicated by their `userRole` key. All admins' `userRole` attributes are equal to `'ADMIN'`.
 
 A user object will look like this:
@@ -40,7 +46,7 @@ isAdmin({
 
 ## `getEmail`
 
-Given a user object, return the users' Code Immersives email. We'll assume that
+Write a function, `getEmail`, that given a user object, return the users' Code Immersives email. We'll assume that
 a Code Immersives email is always in `firstName.lastName@codeimmersives.com` form.
 
 **Examples**
@@ -60,7 +66,7 @@ getEmail({
 
 ## `getPlaylistLength`
 
-Write a function that takes in a playlist and returns the number of songs in the playlist
+Write a function, `getPlaylistLength` that takes in a playlist and returns the number of songs in the playlist
 
 A playlist object will look like this:
 ```
@@ -87,7 +93,7 @@ getPlaylistLength({
 
 ## `getHardestHomework`
 
-Write a function that takes in an array of homework objects and returns the name of 
+Write a function, `getHardestHomework` that takes in an array of homework objects and returns the name of 
 the hardest homework assignment. The hardest homework will be the one that has the lowest average score. If the array contains no homeworks, return an empty string.
 
 **Examples**
@@ -112,7 +118,7 @@ getHardestHomework([
 
 ## `createPhonebook`
 
-Write a function that creates a phonebook object from an array of names
+Write a function, `createPhonebook`, that creates a phonebook object from an array of names
 and phone numbers.
 
 **Examples**
