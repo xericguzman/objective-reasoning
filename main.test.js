@@ -40,8 +40,8 @@ describe('getEmail', () => {
         })).toBe('brian.carela@codeimmersives.com');
 
         expect(getEmail({
-            firstName: 'Brian',
-            lastName: 'Carela'
+            firstName: 'Mesuara',
+            lastName: 'Kaleziq'
         })).toBe('mesuara.kaleziq@codeimmersives.com');
 
         expect(getEmail({
@@ -57,18 +57,18 @@ describe('getPlaylistLength', () => {
 
         expect(getPlaylistLength({
             name: 'playlist 1',
-            sonsgs: ['song1', 'song2', 'song3']
+            songs: ['song1', 'song2', 'song3']
         })).toBe(3);
 
         expect(getPlaylistLength({
             name: 'playlist 2',
-            sonsgs: ['song4', 'song3']
+            songs: ['song4', 'song3']
         })).toBe(2);
     
         expect(getPlaylistLength({
             name: 'playlist 3',
-            sonsgs: []
-        })).toBe(2);
+            songs: []
+        })).toBe(0);
     });
 });
 
@@ -88,12 +88,12 @@ describe('getHardestHomework', () => {
         expect(getHardestHomework([
             { name: 'some hw', averageScore: 99 },
             { name: 'other hw', averageScore: 20 },
-            { name: 'thrid hw', averageScore: 3 }
+            { name: 'third hw', averageScore: 3 }
         ])).toBe('third hw');
     });
 
     it('should return an empty string if given an empty array', () => {
-        expect(getHardestHomework([]).toBe(''));
+        expect(getHardestHomework([])).toBe('');
     });
 });
 
@@ -104,7 +104,7 @@ describe('createPhonebook', () => {
         expect(createPhonebook(
             ['Jimothy', 'Maria', 'Karl'],
             ['123-456-7890', '000-000-0000', '999-888-7766'],
-        )).toBe({
+        )).toStrictEqual({
             'Jimothy': '123-456-7890',
             'Maria': '000-000-0000',
             'Karl': '999-888-7766'
@@ -113,11 +113,11 @@ describe('createPhonebook', () => {
         expect(createPhonebook(
             ['Melissa', 'Andre'],
             ['206-111-2233', '321-123-2424']
-        )).toBe({
+        )).toStrictEqual({
             'Melissa': '206-111-2233',
             'Andre': '321-123-2424'
         });
 
-        expect(createPhonebook([], []).toBe({}));
+        expect(createPhonebook([], [])).toStrictEqual({});
     });
 });
