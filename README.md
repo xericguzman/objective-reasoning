@@ -6,7 +6,7 @@
 * run `npm install`
 * run `jest` or `jest --watch-all` to run the tests
 
-## `isAdmin`
+## 1. `isAdmin`
 
 Write a function, `isAdmin` that takes in a user object and returns true if the user is an admin,
 as indicated by their `userRole` key. All admins' `userRole` attributes are equal to `'ADMIN'`.
@@ -44,7 +44,7 @@ isAdmin({
 => true
 ```
 
-## `getEmail`
+## 2. `getEmail`
 
 Write a function, `getEmail`, that given a user object, return the users' Code Immersives email. We'll assume that
 a Code Immersives email is always in `firstName.lastName@codeimmersives.com` form.
@@ -64,7 +64,7 @@ getEmail({
 => 'anthony.derosa@codeimmersives.com'
 ```
 
-## `getPlaylistLength`
+## 3. `getPlaylistLength`
 
 Write a function, `getPlaylistLength` that takes in a playlist and returns the number of songs in the playlist
 
@@ -91,7 +91,7 @@ getPlaylistLength({
 => 0
 ```
 
-## `getHardestHomework`
+## 4. `getHardestHomework`
 
 Write a function, `getHardestHomework` that takes in an array of homework objects and returns the name of 
 the hardest homework assignment. The hardest homework will be the one that has the lowest average score. If the array contains no homeworks, return an empty string.
@@ -116,7 +116,7 @@ getHardestHomework([
 => 'hip-hip-array'
 ```
 
-## `createPhonebook`
+## 5. `createPhonebook`
 
 Write a function, `createPhonebook`, that creates a phonebook object from an array of names
 and phone numbers.
