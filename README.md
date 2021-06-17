@@ -4,7 +4,7 @@
 * Fork this repo
 * Clone it to your computer
 * run `npm install`
-* run `jest` or `jest --watch-all` to run the tests
+* run `npm run test` to run the tests
 
 ## 1. `isAdmin`
 
