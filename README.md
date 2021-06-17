@@ -3,7 +3,7 @@
 > Working with objects! We'll write some functions that show us the power and flexibility of objects. As usual start of by:
 * Fork this repo
 * Clone it to your computer
-* run `npm install`
+* run `npm install` to install the jest dependency
 * run `npm run test` to run the tests
 
 ## 1. `isAdmin`
