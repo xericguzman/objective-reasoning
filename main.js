@@ -13,7 +13,7 @@ if (object.userRole ==="ADMIN"){
 function getEmail(user) {
     firstName = user.firstName.toLowerCase();
     lastName = lastName = user.lastName.toLowerCase();
-    email = firstName + lastName + '@codeimmersives.com';
+    email = firstName + '.' + lastName + '@codeimmersives.com';
     return email;
 }
 
@@ -22,11 +22,11 @@ function getPlaylistLength(playlist) {
 }
 
 function getHardestHomework(arr) {
-    let lowestScore = 1==
+    let lowestScore = 100
     let hardestHW = ''
 
     for (let i = 0; i < arr.length; i++) {
-        const score = arr[i]averageScore;
+        const score = arr[i].averageScore;
 
         if (score < lowestScore) {
             lowestScore = score
